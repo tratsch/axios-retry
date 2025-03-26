@@ -5,6 +5,13 @@
     "type": "git",
     "url": "https://github.com/tratsch/axios-retry.git"
   },
+  "maintainers": [
+    {
+      "name": "Roland Würth",
+      "email": "roland.wuerth@gmail.com",
+      "url": "https://github.com/tratsch"
+    }
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
