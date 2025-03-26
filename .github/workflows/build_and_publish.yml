@@ -1,0 +1,22 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and Publish
+
+on:
+  release:
+    types: [ created ]
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    uses: dvag/workflow-center/.github/workflows/node_build_lib.yml@2.10.0
+    with:
+      node-version: 18
+      build-type: release
+      image-version: ${{ github.event.release.tag_name }}
+      publish-on-ci: true
+    secrets:
+      PACKAGES_PAT: ${{ secrets.PACKAGES_PAT }}
+      SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
+      SONAR_HOST_URL: ${{secrets.SONAR_HOST_URL}}
