@@ -7,7 +7,7 @@
   },
   "maintainers": [
     {
-      "name": "Roland Würth",
+      "name": "tratsch",
       "email": "roland.wuerth@gmail.com",
       "url": "https://github.com/tratsch"
     }
@@ -15,7 +15,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "author": "Roland Würth <roland.wuerth@gmail.com>",
+  "author": "tratsch <roland.wuerth@gmail.com>",
   "description": "Axios plugin that intercepts failed requests and retries them whenever posible.",
   "license": "Apache-2.0",
   "homepage": "https://github.com/softonic/axios-retry",
