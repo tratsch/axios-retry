@@ -20,7 +20,7 @@
         "singleQuote": true,
         "trailingComma": "none",
         "printWidth": 100,
-        "semi": true,
+        "semi": false,
         "parser": "typescript"
       }
     ],
@@ -33,6 +33,6 @@
     "comma-dangle": ["warn", "never"],
     "consistent-return": "off",
     "no-restricted-properties":"off",
-    "no-unused-vars": "off",
+    "no-unused-vars": "off"
   }
 }
